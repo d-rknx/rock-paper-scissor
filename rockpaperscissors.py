@@ -1,6 +1,9 @@
 import tkinter as tk
 import random
 
+
+total_objects = 20
+
 # emojis for rock, paper, scissors
 EMOJIS = {
     "Rock": "🗿",
@@ -90,7 +93,7 @@ class RPSGame:
         self.canvas.pack()
 
         self.objects = []
-        for _ in range(20):
+        for _ in range(total_objects): # create objects
             self.create_object("Rock")
             self.create_object("Paper")
             self.create_object("Scissors")
